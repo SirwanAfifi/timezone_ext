@@ -15,16 +15,14 @@ export const App = () => {
   }, []);
 
   return (
-    <div className="max-w-md mx-auto flex p-6 bg-gray-100 rounded-lg shadow-xl">
-      <div className="ml-6 pt-1">
-        <h1 className="text-2xl text-blue-700 leading-tight">
-          {new Intl.DateTimeFormat("en-US", {
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit"
-          }).format(time)}
-        </h1>
-      </div>
+    <div className="max-w-md mx-auto flex p-6 bg-teal-400">
+      <h1 className="text-2xl text-white leading-tight">
+        {new Intl.DateTimeFormat("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit"
+        }).format(time)}
+      </h1>
     </div>
   );
 };
